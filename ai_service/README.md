@@ -1,11 +1,15 @@
 # AI Job Recommendation Service
+Repo :
+https://github.com/3mroooo/Ai-Project
 
 ## 🚀 تشغيل الخدمة محلياً
-```bash
-# 1. install requirements
-pip install -r requirements.txt
+# 1. ينزلوها جوه مشروعهم
+cd JobRecommendationSystem
+git clone https://github.com/3mroooo/Ai-Project.git ai_service
 
-# 2. run the API
+# 2. يشغلوها
+cd ai_service
+pip install -r requirements.txt
 python app.py
 الـ API هيشتغل على: "http://localhost:5000"
 
@@ -64,8 +68,17 @@ text
 
 ---
 
-## 📋 شرح لكل ملف :
+## 📋 شرح لكل ملف:
 
+Ai-Project/
+└── ai_service/              # كل حاجة جوه المجلد ده
+    ├── app.py
+    ├── model.py
+    ├── job_descriptions.csv
+    ├── requirements.txt
+    ├── index.html
+    └── README.md
+    
 | الملف | بيحوي إيه | شغله إيه |
 |-------|----------|----------|
 | `app.py` | Flask server | بيستقبل الطلبات ويرد عليها |
@@ -86,7 +99,8 @@ python app.py
 
 الطريقة 2: تشغيل على سيرفر (PythonAnywhere / Render)
 الطريقة 3: الاتصال من الكود بتاعهم
-python
+*******************python********************
+"
 import requests
 
 response = requests.post(
@@ -94,4 +108,5 @@ response = requests.post(
     json={"cv_text": "Python developer"}
 )
 jobs = response.json()
+"
 تحياتي 
