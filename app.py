@@ -53,5 +53,9 @@ logging.basicConfig(level=logging.INFO)
 def health():
     return {"status": "ok"}
 
+# بدل السطر ده
 if __name__ == "__main__":
     app.run(debug=True)
+
+# حط السطر ده في الآخر (بره الـ if)
+application = app  # Gunicorn هيستخدم الـ application
